@@ -1,0 +1,39 @@
+[2017-11-19 10:42:46] [Messager.java] [1] [INFO] 
+======================================================================================================================================
+INFO: TEST [Default test - loginTestDB] STARTED at [22:42:46 2017-11-19]
+[2017-11-19 10:42:48] [Messager.java] [1] [INFO] 
+INFO: TEST [Default test - loginTestDB] FAILED at [22:42:48 2017-11-19] - 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for dao.MyBatisUserlogin.getAllLoginData
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for dao.MyBatisUserlogin.getAllLoginData
+
+org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+com.roxsoft.carina_demoTest.onlainer.dao.MyBatisUserlogin.getAllLoginData(MyBatisUserlogin.java:18)
+com.roxsoft.carina_demoTest.MyLoginTest.loginTestDB(MyLoginTest.java:50)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+org.testng.TestRunner.privateRun(TestRunner.java:767)
+org.testng.TestRunner.run(TestRunner.java:617)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+org.testng.SuiteRunner.run(SuiteRunner.java:254)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+org.testng.TestNG.run(TestNG.java:1057)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+======================================================================================================================================
